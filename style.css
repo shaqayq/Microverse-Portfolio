@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+
+.hum_btn {
+  margin-left: 209px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  background-image: url(./image/headershapesmobile.png) , url(./image/headerbackgroundmobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%, cover;
+  
+  
+}
+.navbar {
+  display: inline-flex;
+  margin-top: 38px;
+}
+
+.logo {
+  
+  width: fit-content;
+}
+.nav-item{
+  list-style: none;
+  display: inline;
+}
+
+.desk-item {
+  display: none;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  height: 718px;
+}
+
+.intro {
+  width: 327px;
+  font-size: 49px;
+  margin-top: 84px;
+  margin-bottom: 0;
+  color: #172b4d;
+}
+
+.paragraph {
+  font-size: 20px;
+  width: 332px;
+  color: #344563;
+ 
+}
+
+
+.conect_info {
+  text-decoration: none;
+  color: #7f8cff;
+  margin-bottom: 0;
+}
+
+.social_item {
+  padding: 0;
+  list-style: none;
+}
+
+.social_item li {
+  display: inline;
+  margin-right: 31px;
+}
+
