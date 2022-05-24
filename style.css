@@ -3,7 +3,6 @@ body {
   margin: 0;
 }
 
-
 .hum_btn {
   margin-left: 209px;
 }
@@ -11,22 +10,21 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  background-image: url(./image/headershapesmobile.png) , url(./image/headerbackgroundmobile.png);
+  background-image: url(./image/headershapesmobile.png), url(./image/headerbackgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  
-  
 }
+
 .navbar {
   display: inline-flex;
   margin-top: 38px;
 }
 
 .logo {
-  
   width: fit-content;
 }
-.nav-item{
+
+.nav-item {
   list-style: none;
   display: inline;
 }
@@ -54,9 +52,7 @@ body {
   font-size: 20px;
   width: 332px;
   color: #344563;
- 
 }
-
 
 .conect_info {
   text-decoration: none;
@@ -73,4 +69,3 @@ body {
   display: inline;
   margin-right: 31px;
 }
-
