@@ -1,13 +1,12 @@
 @font-face {
-  font-family: 'Poppins';
-  src: url(font/Poppins-Black.ttf) format('truetype');
+  font-family: "Poppins";
+  src: url(font/Poppins-Black.ttf) format("truetype");
 }
 
 body {
   padding: 0;
   margin: 0;
-  font-family:'Poppins',Fallback, sans-serif ;
-  
+  font-family: "Poppins", Fallback, sans-serif;
 }
 
 .hum_btn {
