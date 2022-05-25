@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(font/Poppins-Black.ttf) format('truetype');
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-family:'Poppins',Fallback, sans-serif ;
+  
 }
 
 .hum_btn {
@@ -36,20 +43,20 @@ body {
 .header-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 24px;
+  margin-left: 9px;
   height: 718px;
 }
 
 .intro {
   width: 327px;
-  font-size: 49px;
+  font-size: 40px;
   margin-top: 84px;
   margin-bottom: 0;
   color: #172b4d;
 }
 
 .paragraph {
-  font-size: 20px;
+  font-size: 16px;
   width: 332px;
   color: #344563;
 }
