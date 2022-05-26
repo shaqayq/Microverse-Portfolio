@@ -1,12 +1,6 @@
-/* @font-face {
-  font-family: "Poppins";
-  src: url(font/Poppins-Black.ttf) format("truetype");
-} */
-
 body {
   padding: 0;
   margin: 0;
-  /* font-family: "Poppins", Fallback, sans-serif; */
 }
 
 .hum_btn {
@@ -213,6 +207,7 @@ body {
 .resume_btn :hover {
   background-color: #42cdf2;
 }
+
 .languages {
   margin-top: 58px;
 }
@@ -278,6 +273,7 @@ body {
 .victor {
   float: right;
 }
+
 .down-victor {
   float: right;
   margin-top: 18px;
