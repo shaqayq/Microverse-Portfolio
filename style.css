@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .hum_btn {
@@ -67,7 +70,7 @@ body {
 
 .social_item li {
   display: inline;
-  margin-right: 31px;
+  margin-right: 23px;
 }
 
 .grid-container {
@@ -93,8 +96,9 @@ body {
 .h_section {
   margin-top: 0;
   margin-left: 20px;
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 0;
+  width: 200px;
 }
 
 .screenshoot {
@@ -115,13 +119,14 @@ body {
 .canopy li {
   display: inline;
   padding-right: 7px;
+  font-size: 13px;
 }
 
 .work_paragraph {
   margin-top: 0;
   width: 295px;
   margin-left: 24px;
-  font-size: 20px;
+  font-size: 15px;
   color: #344563;
 }
 
@@ -133,13 +138,12 @@ body {
 }
 
 .lang li {
-  font-size: 19px;
-  color: #344563;
+  font-size: 12px;
+  color: #6070ff;
   display: inline-flex;
   padding: 4px 12px 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
-  margin-right: 10px;
 }
 
 .btn {
@@ -152,11 +156,15 @@ body {
 
 .h_btn {
   font-size: 18px;
-  color: #4274f2;
+  color: #1d46af;
+}
+
+.h_btn :hover {
+  color: #fff;
 }
 
 .btn:hover {
-  background-color: #42cdf2;
+  background-color: #6070ff;
 }
 
 .work_section2 {
@@ -169,7 +177,7 @@ body {
   margin-right: 24px;
   border-radius: 30px;
   border-style: ridge;
-  height: 643px;
+  height: 621px;
   background-color: #fff;
 }
 
@@ -200,8 +208,8 @@ body {
   border-radius: 5px;
 }
 
-.resume_btn :hover {
-  background-color: #42cdf2;
+.resume_btn:hover {
+  background-color: #6070ff;
 }
 
 .languages {
@@ -221,7 +229,7 @@ body {
 }
 
 .about-paraghraph {
-  font-size: 24px;
+  font-size: 16px;
   width: 346px;
 }
 
@@ -240,7 +248,7 @@ body {
 .lang-list li {
   list-style: none;
   padding-bottom: 20px;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .child-list {
@@ -254,7 +262,7 @@ body {
   padding: 12px;
   display: flex;
   border-radius: 8px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .lang-name {
