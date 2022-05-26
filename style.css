@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: "Poppins";
   src: url(font/Poppins-Black.ttf) format("truetype");
-}
+} */
 
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", Fallback, sans-serif;
+  /* font-family: "Poppins", Fallback, sans-serif; */
 }
 
 .hum_btn {
@@ -48,14 +48,14 @@ body {
 
 .intro {
   width: 327px;
-  font-size: 40px;
+  font-size: 42px;
   margin-top: 84px;
   margin-bottom: 0;
   color: #172b4d;
 }
 
 .paragraph {
-  font-size: 16px;
+  font-size: 20px;
   width: 332px;
   color: #344563;
 }
@@ -99,7 +99,7 @@ body {
 .h_section {
   margin-top: 0;
   margin-left: 20px;
-  font-size: 33px;
+  font-size: 40px;
   margin-bottom: 0;
 }
 
@@ -127,7 +127,7 @@ body {
   margin-top: 0;
   width: 295px;
   margin-left: 24px;
-  font-size: 17px;
+  font-size: 20px;
   color: #344563;
 }
 
@@ -143,6 +143,8 @@ body {
 }
 
 .lang li {
+  font-size: 19px;
+  color: #344563;
   display: inline-flex;
   padding: 4px 12px 4px 12px;
   background-color: #ebebff;
@@ -156,6 +158,15 @@ body {
   border: 1px solid #4274f2;
   border-radius: 5px;
   margin-left: 24px;
+}
+
+.h_btn {
+  font-size: 18px;
+  color: #4274f2;
+}
+
+.btn:hover {
+  background-color: #42cdf2;
 }
 
 .work_section2 {
@@ -185,6 +196,7 @@ body {
 }
 
 .about_title {
+  font-size: 49px;
   width: 135px;
   margin-top: 58px;
 }
@@ -198,13 +210,11 @@ body {
   border-radius: 5px;
 }
 
+.resume_btn :hover {
+  background-color: #42cdf2;
+}
 .languages {
   margin-top: 58px;
-}
-
-.h_btn {
-  font-size: 18px;
-  color: #4274f2;
 }
 
 .left-about {
@@ -220,7 +230,7 @@ body {
 }
 
 .about-paraghraph {
-  font-size: 19px;
+  font-size: 24px;
   width: 346px;
 }
 
@@ -239,7 +249,7 @@ body {
 .lang-list li {
   list-style: none;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .child-list {
@@ -253,6 +263,7 @@ body {
   padding: 12px;
   display: flex;
   border-radius: 8px;
+  font-size: 20px;
 }
 
 .lang-name {
@@ -266,4 +277,8 @@ body {
 
 .victor {
   float: right;
+}
+.down-victor {
+  float: right;
+  margin-top: 18px;
 }
