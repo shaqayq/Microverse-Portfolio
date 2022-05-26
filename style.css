@@ -132,10 +132,6 @@ body {
   margin-top: 0;
 }
 
-.hide {
-  display: none;
-}
-
 .lang li {
   font-size: 19px;
   color: #344563;
@@ -272,6 +268,7 @@ body {
 
 .victor {
   float: right;
+  margin-top: 10px;
 }
 
 .down-victor {
