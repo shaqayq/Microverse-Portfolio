@@ -13,7 +13,8 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  background-image: url(./image/headershapesmobile.png), url(./image/headerbackgroundmobile.png);
+  background-image: url(./image/headershapesmobile.png),
+    url(./image/headerbackgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%, cover;
 }
@@ -357,8 +358,6 @@ input {
   padding-left: 10px;
 }
 
-
-
-.break{
+.break {
   display: none;
 }
