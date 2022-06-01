@@ -13,8 +13,7 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  background-image: url(./image/headershapesmobile.png),
-    url(./image/headerbackgroundmobile.png);
+  background-image: url(./image/headershapesmobile.png), url(./image/headerbackgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%, cover;
 }
@@ -368,7 +367,6 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-  @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
   body {
     font-family: "Poppins", sans-serif;
@@ -390,15 +388,18 @@ input {
   .desk-item {
     display: inline;
   }
+
   .nav-item li {
     display: inline;
     padding-right: 53px;
   }
+
   .nav-item li a {
     text-decoration: none;
     color: #6070ff;
     font-size: 15px;
   }
+
   .logo {
     margin-right: 346px;
     margin-left: 20px;
@@ -557,26 +558,11 @@ input {
     border-radius: 8px;
   }
 
-  .about {
-    background-image: url(./image/aboutmyselfback.png);
-    background-size: cover;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    margin-top: 110px;
-    width: 1279px;
-    height: 565px;
-  }
-  x .left-about {
+  .left-about {
     flex-direction: column;
     margin-left: 63px;
     width: 400px;
     margin-right: 216px;
-  }
-
-  .about-paraghraph {
-    font-size: 25px;
-    width: 585px;
   }
 
   .contact {
@@ -674,7 +660,8 @@ input {
 
   .about-paraghraph {
     color: #344563;
-    font-size: 14px;
+    font-size: 25px;
+    width: 585px;
   }
 
   .about-connect {
