@@ -13,7 +13,8 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  background-image: url(./image/headershapesmobile.png), url(./image/headerbackgroundmobile.png);
+  background-image: url(./image/headershapesmobile.png),
+    url(./image/headerbackgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%, cover;
 }
@@ -367,7 +368,6 @@ input {
 }
 
 @media screen and (min-width: 768px) {
-
   body {
     font-family: "Poppins", sans-serif;
   }
@@ -539,11 +539,6 @@ input {
     margin: 20px 20px 13px 0;
   }
 
-  .work_paragraph {
-    font-size: 20px;
-    width: 474px;
-  }
-
   .lang {
     list-style: none;
     padding-left: 0;
@@ -598,10 +593,6 @@ input {
     margin-left: 0;
   }
 
-  .contact_btn:hover {
-    background-color: #072464;
-  }
-
   .name,
   .email {
     margin-left: 1px;
@@ -630,6 +621,10 @@ input {
     border-radius: 5px;
   }
 
+  .contact_btn:hover {
+    background-color: #072464;
+  }
+
   .border_img {
     display: none;
   }
@@ -643,13 +638,6 @@ input {
     margin-top: 110px;
     width: 1279px;
     height: 565px;
-  }
-
-  .left-about {
-    flex-direction: column;
-    margin-left: 63px;
-    width: 400px;
-    margin-right: 216px;
   }
 
   .about-title {
@@ -669,7 +657,7 @@ input {
     color: #7f8cff;
     font-size: 16px;
   }
-  
+
   .resume_btn {
     width: 191px;
     padding: 10px;
