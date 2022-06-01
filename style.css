@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   padding: 0;
@@ -364,7 +364,7 @@ input {
 
 .break {
   display: none;
-}
+} */
 
 @media screen and (min-width: 768px) {
   body {
@@ -400,7 +400,7 @@ input {
   }
 
   .logo {
-    margin-right: 346px;
+    margin-right: 386px;
     margin-left: 20px;
     margin-top: 26px;
   }
@@ -446,7 +446,7 @@ input {
   }
 
   .grid-container {
-    margin-top: 185px;
+    
     display: grid;
     row-gap: 88px;
     margin-left: 28px;
@@ -500,7 +500,7 @@ input {
 
   .h_btn {
     font-size: 18px;
-    color: #4274f2;
+    color: #1d46af;
   }
 
   .btn {
@@ -521,7 +521,7 @@ input {
     margin-right: 24px;
     border-radius: 30px;
     border-style: ridge;
-    height: 653px;
+    height: 470px;
     background-color: #fff;
   }
 
@@ -704,6 +704,10 @@ input {
     height: 103px;
     border-radius: 19px;
     padding-left: 12px;
+  }
+
+  .child-list2 li {
+    
   }
 
   .h-lang {
