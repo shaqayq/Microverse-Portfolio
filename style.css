@@ -446,7 +446,6 @@ input {
   }
 
   .grid-container {
-    
     display: grid;
     row-gap: 88px;
     margin-left: 28px;
@@ -704,10 +703,6 @@ input {
     height: 103px;
     border-radius: 19px;
     padding-left: 12px;
-  }
-
-  .child-list2 li {
-    
   }
 
   .h-lang {
