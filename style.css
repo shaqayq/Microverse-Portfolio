@@ -1,4 +1,4 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 body {
   padding: 0;
@@ -364,7 +364,7 @@ input {
 
 .break {
   display: none;
-} */
+}
 
 @media screen and (min-width: 768px) {
   body {
@@ -408,7 +408,8 @@ input {
   .content {
     display: flex;
     justify-content: center;
-    background-image: url(./image/desktop-img/Header\ bg@2x.png), url(./image/desktop-img/headerbackground\ .png);
+    background-image: url(./image/desktop-img/Header\ bg@2x.png),
+      url(./image/desktop-img/headerbackground\ .png);
     background-repeat: no-repeat;
     background-size: 100%, cover;
     height: 852px;
@@ -450,6 +451,7 @@ input {
     row-gap: 88px;
     margin-left: 28px;
     width: 600px;
+    padding-top: 0;
   }
 
   .work_section {
@@ -559,7 +561,8 @@ input {
   }
 
   .contact {
-    background-image: url(./image/desktop-img/contactformbackgroundshapes.png), url(./image/desktop-img/background.png);
+    background-image: url(./image/desktop-img/contactformbackgroundshapes.png),
+      url(./image/desktop-img/background.png);
     background-size: 1440px;
     background-repeat: no-repeat;
     background-color: #fff;
