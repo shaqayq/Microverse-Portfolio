@@ -34,6 +34,7 @@ body {
 
 .desk-item {
   display: none;
+  float: right;
 }
 
 .header-wrapper {
@@ -400,15 +401,15 @@ input {
   }
 
   .logo {
-    margin-right: 386px;
-    margin-left: 20px;
-    margin-top: 26px;
+    margin-right: 351px;
+    margin-left: 36px;
+    float: left;
   }
 
   .content {
     display: flex;
     justify-content: center;
-    background-image: url(./image/desktop-img/Header\ bg@2x.png), url(./image/desktop-img/headerbackground\ .png);
+    background-image: url(./image/desktop-img/Header\ bg@2x.png),url(./image/desktop-img/headerbackground\ .png);
     background-repeat: no-repeat;
     background-size: 100%, cover;
     height: 852px;
@@ -560,7 +561,8 @@ input {
   }
 
   .contact {
-    background-image: url(./image/desktop-img/contactformbackgroundshapes.png), url(./image/desktop-img/background.png);
+    background-image: url(./image/desktop-img/contactformbackgroundshapes.png),
+      url(./image/desktop-img/background.png);
     background-size: 1440px;
     background-repeat: no-repeat;
     background-color: #fff;
