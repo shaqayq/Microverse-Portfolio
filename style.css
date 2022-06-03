@@ -153,8 +153,14 @@ body {
   border: 1px solid #4274f2;
   border-radius: 5px;
   margin-left: 24px;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
+.btn:hover {
+    background-color: #FFCCCC;
+    height: 50px;
+    transform: rotate(180deg);
+}
 .h_btn {
   font-size: 18px;
   color: #1d46af;
