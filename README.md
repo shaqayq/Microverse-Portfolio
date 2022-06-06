@@ -9,6 +9,10 @@
 
 - Major languages: HTML and CSS
 
+## Live Demo (if available)
+
+[Live Demo Link](https://shaqayq.github.io/Portfolio/)
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
