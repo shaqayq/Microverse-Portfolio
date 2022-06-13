@@ -8,6 +8,7 @@ body {
 
 .hum_btn {
   margin-left: 209px;
+  cursor: pointer;
 }
 
 .content {
@@ -41,6 +42,18 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   margin-left: 90px;
+  cursor: pointer;
+}
+
+.close-btn  {
+  position: relative;
+  top: 0;
+  right: 20px;
+  border: 0;
+  font-size: 1.5em;
+  background: 0;
+  color: #fff;
+
 }
 
 .dropdown-content a {

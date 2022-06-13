@@ -15,3 +15,9 @@ function listMenu() {
       }
     }
   }
+
+  function  closebtn1()
+  {
+    let navclose= document.getElementById("dropdown-content")
+     navclose.style.display = "none"
+  }
