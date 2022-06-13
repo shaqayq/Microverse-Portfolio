@@ -32,9 +32,27 @@ body {
   display: inline;
 }
 
-.desk-item {
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #7c85e1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left: 90px;
 }
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd};
+
+.show {display: block;}
 
 .header-wrapper {
   display: flex;
