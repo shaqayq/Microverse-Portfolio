@@ -9,10 +9,9 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  },
-  "dependencies": {
-    "npm": "^8.12.1"
-  },
+  }
+  
+  ,
   "name": "portfolio",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
   "version": "1.0.0",
