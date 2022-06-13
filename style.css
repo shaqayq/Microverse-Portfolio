@@ -14,7 +14,7 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  background-image: url(./image/headershapesmobile.png), url(./image/headerbackgroundmobile.png);
+  background-image: url(./image/headershapesmobile.png),url(./image/headerbackgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%, cover;
 }
@@ -40,13 +40,13 @@ body {
   background-color: #7c85e1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   margin-left: 90px;
   cursor: pointer;
 }
 
-.close-btn  {
+.close-btn {
   position: relative;
   top: 0;
   right: 20px;
@@ -54,7 +54,6 @@ body {
   font-size: 1.5em;
   background: 0;
   color: #fff;
-
 }
 
 .dropdown-content a {
@@ -65,9 +64,13 @@ body {
   float: right;
 }
 
-.dropdown a:hover {background-color: #ddd};
+.dropdown a:hover {
+  background-color: #ddd;
+}
 
-.show {display: block;}
+.show {
+  display: block;
+}
 
 .header-wrapper {
   display: flex;
