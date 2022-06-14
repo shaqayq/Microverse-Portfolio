@@ -3,6 +3,6 @@ function listMenu() {
 }
 
 function closediv() {
-    const navclose = document.getElementById('dropdown-list');
-    navclose.style.display = 'none';
-  }
+  const navclose = document.getElementById('dropdown-list');
+  navclose.style.display = 'none';
+}
