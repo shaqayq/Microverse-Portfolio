@@ -1,14 +1,14 @@
 function listMenu() {
-   (document.getElementById("dropdown-list").style.display = 'block');
+   (document.getElementById('dropdown-list').style.display = 'block');
 }
 
 window.onclick = function (event) {
-  if (!event.target.matches(".hum_btn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
+  var i;
+  if (!event.target.matches('.hum_btn')) {
+    let dropdowns = document.getElementsByClassName('dropdown-content');
     for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if ((openDropdown.style.display = 'block')) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.style.display = 'block') {
         openDropdown.style.display = 'none';
       }
     }
@@ -16,6 +16,6 @@ window.onclick = function (event) {
 };
 
 function closebtn1() {
-  const navclose = document.getElementById("dropdown-content");
-  navclose.style.display = "none";
+  const navclose = document.getElementById('dropdown-content');
+  navclose.style.display = 'none';
 }
