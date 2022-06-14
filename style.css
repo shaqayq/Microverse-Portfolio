@@ -24,7 +24,9 @@ body {
 }
 
 .logo {
-  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-item {
@@ -32,9 +34,42 @@ body {
   display: inline;
 }
 
-.desk-item {
+.dropdown-content {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  opacity: 0.9;
   display: none;
-  float: right;
+  position: absolute;
+  background-color: #6070ff;
+  overflow: auto;
+  box-shadow: 0 8px 16px 0 #0003;
+  z-index: 1;
+  padding-top: 43px;
+  mix-blend-mode: inherit;
+}
+
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  border: 0;
+  background: 0;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding-left: 0;
+  text-decoration: none;
+  display: block;
+  font-size: 32px;
+  margin-top: 27px;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
 }
 
 .header-wrapper {
@@ -90,7 +125,7 @@ body {
   margin-right: 24px;
   border-radius: 30px;
   border-style: ridge;
-  height: 651px;
+  height: 587px;
   background-color: #fff;
 }
 
@@ -219,7 +254,7 @@ body {
 
 .left-about {
   flex-direction: column;
-  width: 350px;
+  width: 339px;
   margin-right: 216px;
 }
 
@@ -260,15 +295,10 @@ body {
 
 .child-list li {
   background-color: #e0e3e7;
-  padding: 6px;
+  padding: 12px;
   display: flex;
   border-radius: 8px;
   font-size: 15px;
-}
-
-.child-list2 {
-  padding-left: 0;
-  display: flex;
 }
 
 .lang-name {
@@ -295,7 +325,7 @@ body {
   background-position: right top, left top;
   background-repeat: no-repeat, no-repeat;
   background-size: 203px, 375px;
-  width: 375px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 113px;
@@ -367,6 +397,10 @@ input {
   display: none;
 }
 
+.desk-item {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   body {
     font-family: "Poppins", sans-serif;
@@ -385,8 +419,16 @@ input {
     display: none;
   }
 
+  .dropdown-content {
+    display: none !important;
+  }
+
   .desk-item {
     display: inline;
+  }
+
+  .nav-item {
+    margin-top: 36px;
   }
 
   .nav-item li {
@@ -397,12 +439,12 @@ input {
   .nav-item li a {
     text-decoration: none;
     color: #6070ff;
-    font-size: 15px;
+    font-size: 19px;
   }
 
   .logo {
-    margin-right: 351px;
-    margin-left: 36px;
+    margin-right: 414px;
+    margin-left: 93px;
     float: left;
   }
 
@@ -412,8 +454,9 @@ input {
     background-image: url(./image/desktop-img/Header\ bg@2x.png), url(./image/desktop-img/headerbackground\ .png);
     background-repeat: no-repeat;
     background-size: 100%, cover;
-    height: 852px;
+    height: 900px;
     width: 100%;
+    margin-bottom: 89px;
   }
 
   .header-wrapper {
@@ -471,10 +514,6 @@ input {
   .screenshoot {
     width: 563px;
     margin: 20px 20px 10px 20px;
-  }
-
-  .screenshoot:hover {
-    transform: scale(0.6);
   }
 
   .right-side {
@@ -566,7 +605,7 @@ input {
 
   .contact {
     background-image: url(./image/desktop-img/contactformbackgroundshapes.png), url(./image/desktop-img/background.png);
-    background-size: 1440px;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: #fff;
     height: 718px;

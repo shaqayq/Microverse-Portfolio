@@ -6,16 +6,23 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="style.js"></script>
 
     <title>Portfolio Project</title>
   </head>
   <body>
+    <ul class="dropdown-content" id="dropdown-list">
+      <a href="#home" onclick="hide();"><h3>Portfolio</h3></a>
+      <a href="#about" onclick="hide();"><h3>About</h3></a>
+      <a href="#contact" onclick="hide();"><h3>Contact</h3></a>
+      <button id="close-btn" onclick="closediv();">&times;</button>
+    </ul>
     <header class="top_header">
       <div class="navbar">
-        <ul class="nav-item">
+         <ul class="nav-item">
           <li class="logo">
             <a href="#"><img src="./image/MyLogo.png" alt="Logo image" class="logo"/></a>
-            <a href="#"><img src="./image/Union.png" alt="Union image" class="hum_btn"/></a>
+           <img src="./image/Union.png" alt="Union image" class="hum_btn" onclick="(listMenu());"/>
           </li>  
           <li class="desk-item"><a href="#">Portfolio</a></li>
           <li  class="desk-item"><a href="#">About</a></li>
@@ -24,9 +31,10 @@
         
       </div>
     </header>
-    <section class="content">
+  
+    <section class="content" id="home">
       <div class="header-wrapper">
-        <h1 class="intro">I’m Shaqayq Glad to see you!</h1>
+        <h1 class="intro">I’m Mariane Glad to see you!</h1>
         <p class="paragraph">
           I’m a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
@@ -60,20 +68,20 @@
     </section>
     <section class="grid-container">
       <div class="work_section">
+       <div class="screen">
         <img
-          src="./image/SnapshootPortfolio.png"
-          alt="snapshoot Portfolio"
-          class="screenshoot"
-        />
+        src="./image/SnapshootPortfolio.png"
+        alt="snapshoot Portfolio"
+        class="screenshoot"
+      />
+       </div>
         <div class="right-side">
-          <h2 class="h_section">Tonic</h2>
+          <h1 class="h_section">Tonic</h1>
           <ul class="canopy">
-            <li>
-              <span><b>CANOPY</b></span>
-            </li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
+            <li><Span><b>CANOPY</b></Span></li>
+            <li><img src="./image/circle.png" alt="circle" /></li>
             <li><span>Back End Dev</span></li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
+            <li><img src="./image/circle.png" alt="circle" /></li>
             <li><span>2015</span></li>
           </ul>
           <p class="work_paragraph">
@@ -92,24 +100,21 @@
       </div>
       <div class="work_section2">
         <img
-          src="./image/SnapshootPortfolio2.png"
-          alt="snapshoot Portfolio"
-          class="screenshoot"
-        />
+        src="./image/SnapshootPortfolio2.png"
+        alt="snapshoot Portfolio"
+        class="screenshoot"
+      />
         <div class="left-side">
-          <h2 class="h_section2">Uber Navigation</h2>
+          <h1 class="h_section">Multi-Post Stories</h1>
           <ul class="canopy">
-            <li>
-              <span><b>FACEBOOK</b></span>
-            </li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
-            <li><span>Lead Developer</span></li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
+            <li><Span><b>FACEBOOK</b></Span></li>
+             <li><img src="./image/circle.png" alt="circle" /></li>
+            <li><span>Backend Dev</span></li>
+             <li><img src="./image/circle.png" alt="circle" /></li>
             <li><span>2018</span></li>
           </ul>
           <p class="work_paragraph">
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
+           A daily selection of privately personalized reads; no accounts or sign-ups required.
           </p>
           <ul class="lang">
             <li>html</li>
@@ -120,6 +125,7 @@
             <span class="h_btn">See Project</span>
           </button>
         </div>
+       
       </div>
       <div class="work_section">
         <img
@@ -128,20 +134,16 @@
           class="screenshoot"
         />
         <div class="right-side">
-          <h2 class="h_section">Facebook 360</h2>
+          <h1 class="h_section">Tonic</h1>
           <ul class="canopy">
-            <li>
-              <span><b>FACEBOOK</b></span>
-            </li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
-            <li><span>Full Stack Dev</span></li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
+            <li><Span><b>FACEBOOK</b></Span></li>
+           <li><img src="./image/circle.png" alt="circle" /></li>
+            <li><span>Backend div</span></li>
+           <li><img src="./image/circle.png" alt="circle" /></li>
             <li><span>2015</span></li>
           </ul>
           <p class="work_paragraph">
-            Experimental content creation feature that allows users to add to an
-            existing story over the course of a day without spamming their
-            friends.
+            A daily selection of privately personalized reads; no accounts or sign-ups required.
           </p>
           <ul class="lang">
             <li>html</li>
@@ -160,32 +162,29 @@
           class="screenshoot"
         />
         <div class="left-side">
-          <h2 class="h_section2">Uber Navigation</h2>
+          <h1 class="h_section">Multi-Post Stories</h1>
           <ul class="canopy">
-            <li>
-              <span><b>FACEBOOK</b></span>
-            </li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
-            <li><span>Lead Developer</span></li>
-            <li><img src="./image/desktop-img/Counter.png" alt="circle" /></li>
+            <li><Span><b>FACEBOOK</b></Span></li>
+           <li><img src="./image/circle.png" alt="circle" /></li>
+            <li><span>Backend Dev</span></li>
+           <li><img src="./image/circle.png" alt="circle" /></li>
             <li><span>2018</span></li>
           </ul>
           <p class="work_paragraph">
-            A smart assistant to make driving more safe, efficient, and fun by
-            unlocking your most expensive computer: your car.
+           A daily selection of privately personalized reads; no accounts or sign-ups required.
           </p>
           <ul class="lang">
             <li>html</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button type="button" class="btn">
+          <button class="btn">
             <span class="h_btn">See Project</span>
           </button>
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
       <div class="left-about">
         <h2 class="about-title">
           About Myself
@@ -226,56 +225,38 @@
       <ul class="lang-list">
         <li>
           <span class="item-list"><b>Languages</b></span>
-          <img src="./image/down.png" alt="down" class="victor" />
+           <img src="./image/down.png" alt="down" class="down-victor">
         </li>
         <li>
           <ul class="child-list">
-            <li>
-              <ul class="child-list2">
-                <li>
-                  <img src="./image/js.png" alt="js image" />
-                </li>
-                <li>
-                  <h4 class="h-lang">javascript</h4>
-                </li>
-              </ul>
+            <li class="item">
+            <img src="./image/js.png" alt="js image" class="lang_logo" />
+                <span class="lang-name"> javascript</span>
+            </li>
+            <li class="item">
+              <img src="./image/html5.png" alt="html5" class="lang_logo" />   
+              <span class="lang-name">Html</span>               
             </li>
             <li>
-              <ul class="child-list2">
-                <li>
-                  <img src="./image/html5.png" alt="htmlimage" />
-                </li>
-                <li>
-                  <h4 class="h-lang">html</h4>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="child-list2">
-                <li>
-                  <img src="./image/html3.png" alt="css image" />
-                </li>
-                <li>
-                  <h4 class="h-lang">CSS</h4>
-                </li>
-              </ul>
+              <img src="./image/css.png" alt="html5" class="lang_logo" />  
+              <span class="lang-name">Css</span>
             </li>
           </ul>
         </li>
         <li>
           <span class="item-list"><b>Frameworks</b></span>
-          <img src="./image/right.png" alt="right" class="victor" />
-          <hr />
+           <img src="./image/right.png" alt="right" class="victor">
+           <hr>
         </li>
         <li>
           <span class="item-list"><b>Skils</b></span>
-          <img src="./image/right.png" alt="right" class="victor" />
-          <hr />
+           <img src="./image/right.png" alt="right" class="victor">
+           <hr>
         </li>
       </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div>
         <div class="contact-body">
           <h2 class="h_contact">Contact me</h2>
