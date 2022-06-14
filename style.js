@@ -2,7 +2,7 @@ function listMenu() {
   document.getElementById('dropdown-list').style.display = 'block';
 }
 
-function closebtn1() {
-    const navclose = document.getElementById('dropdown-content');
+function closediv() {
+    const navclose = document.getElementById('dropdown-list');
     navclose.style.display = 'none';
   }

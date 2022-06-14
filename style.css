@@ -46,6 +46,16 @@ body {
   
 }
 
+#close-btn {
+  position: absolute;
+  top: 20px;
+  right: 60px;
+  border: 0;
+  background: 0;
+  font-size: 1.5em;
+  color: #fff;
+}
+
 .dropdown-content a {
   color: #fff;
   padding: 30px 16px 10px 89px;
