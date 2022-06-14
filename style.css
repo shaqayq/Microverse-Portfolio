@@ -24,7 +24,9 @@ body {
 }
 
 .logo {
-  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-item {
@@ -48,7 +50,7 @@ body {
 #close-btn {
   position: absolute;
   top: 20px;
-  right: 60px;
+  right: 100px;
   border: 0;
   background: 0;
   font-size: 1.5em;
