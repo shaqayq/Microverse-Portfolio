@@ -6,3 +6,7 @@ function closediv() {
   const navclose = document.getElementById('dropdown-list');
   navclose.style.display = 'none';
 }
+
+function hide() {
+  document.getElementById('dropdown-list').style.display = 'none';
+}

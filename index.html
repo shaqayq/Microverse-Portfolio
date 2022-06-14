@@ -12,9 +12,9 @@
   </head>
   <body>
     <ul class="dropdown-content" id="dropdown-list">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" onclick="hide();"><h3>Home</h3></a>
+      <a href="#about" onclick="hide();"><h3>About</h3></a>
+      <a href="#contact" onclick="hide();"><h3>Contact</h3></a>
       <button id="close-btn" onclick="closediv();">&times;</button>
     </ul>
     <header class="top_header">
@@ -30,7 +30,7 @@
       </div>
     </header>
   
-    <section class="content">
+    <section class="content" id="home">
       <div class="header-wrapper">
         <h1 class="intro">I’m Mariane Glad to see you!</h1>
         <p class="paragraph">

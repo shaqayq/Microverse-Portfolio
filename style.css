@@ -39,12 +39,14 @@ body {
   width: 100%;
   margin: 0;
   opacity: 0.9;
-  display: none;
+  display: non;
   position: absolute;
-  background-color: #7c85e1;
+  background-color: #6070ff;
   overflow: auto;
   box-shadow: 0 8px 16px 0 #0003;
   z-index: 1;
+  padding-top: 43px;
+  mix-blend-mode: inherit;
 }
 
 #close-btn {
@@ -53,15 +55,17 @@ body {
   right: 100px;
   border: 0;
   background: 0;
-  font-size: 1.5em;
+  font-size: 2.5em;
   color: #fff;
 }
 
 .dropdown-content a {
   color: #fff;
-  padding: 30px 16px 10px 89px;
+  padding-left: 0;
   text-decoration: none;
   display: block;
+  font-size: 32px;
+  margin-top: 27px;
 }
 
 .dropdown a:hover {
@@ -325,7 +329,7 @@ body {
   background-position: right top, left top;
   background-repeat: no-repeat, no-repeat;
   background-size: 203px, 375px;
-  width: 3px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 113px;
