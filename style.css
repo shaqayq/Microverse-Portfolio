@@ -39,7 +39,7 @@ body {
   background-color: #7c85e1;
   min-width: 160px;
   overflow: auto;
-  box-shadow: 0 8px 16px 0 #00000033;
+  box-shadow: 0 8px 16px 0 #0003;
   z-index: 1;
   margin-left: 90px;
   cursor: pointer;
