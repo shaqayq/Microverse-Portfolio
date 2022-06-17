@@ -125,7 +125,7 @@ body {
   margin-right: 24px;
   border-radius: 30px;
   border-style: ridge;
-  height: 587px;
+  height: 741px;
   background-color: #fff;
 }
 
@@ -180,6 +180,7 @@ body {
   padding: 4px 12px 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
+  margin-right: 16px;
 }
 
 .btn {
@@ -401,7 +402,143 @@ input {
   display: none;
 }
 
+.container#blure .active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popup {
+  background-color: #fff;
+  height: 565px;
+  width: 317px;
+  top: 2%;
+  left: 8%;
+  position: fixed;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 1px 5px 5px 8px #bfacac;
+}
+
+.pop-close {
+  position: absolute;
+  right: 14px;
+  border: 0;
+  background: 0;
+  font-size: 31px;
+  color: #67798e;
+}
+.pop-background {
+  filter: blur(10px);
+  user-select: none;
+  pointer-events: none;
+}
+
+.pop-title {
+  margin: 9px 0 0 20px;
+  font-size: 26px;
+}
+
+.canopy-list {
+  margin: 0 0 0 23px;
+}
+
+.pop-img {
+  height: 172px;
+  width: 263px;
+  margin: 0 0 0 27px;
+}
+
+.pop-paragraph {
+  width: 300px;
+  margin: 10px 0 0 12px;
+  font-size: 14px;
+}
+
+.pop-lang {
+  list-style: none;
+  padding-left: 0;
+  margin: 11px 0 16px 8px;
+}
+
+.pop-lang li {
+  margin-right: 10px;
+}
+
+.pop-btn {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #4274f2;
+  border-radius: 5px;
+  margin: 5px 0 0 20px;
+  width: 126px;
+}
+
+.pop-btn span {
+  font-size: 15px;
+}
+
+.pop-btn i {
+  color: #000c7a;
+}
+
+.pop-right a :hover {
+  background-color: #000c7a;
+}
+
 @media screen and (min-width: 768px) {
+  .popup {
+    background-color: #fff;
+    height: 90%;
+    width: 83%;
+    top: 1%;
+    left: 8%;
+    position: fixed;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px 8px #bfacac;
+  }
+
+  .pop-title {
+    margin: 9px 0 0 20px;
+    font-size: 40px;
+  }
+
+  .pop-img {
+    height: 50%;
+    width: 74%;
+    margin: 0 0 0 113px;
+  }
+
+  .pop-paragraph {
+    width: 431px;
+    margin: 10px 0 0 12px;
+    font-size: 18px;
+  }
+
+  .pop-right {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 112px;
+  }
+
+  .pop-btn span {
+    font-size: 18px;
+  }
+
+  .pop-right a :hover {
+    background-color: #000c7a;
+  }
+
+  .pop-close {
+    position: absolute;
+    right: 58px;
+    border: 0;
+    background: 0;
+    font-size: 53px;
+    color: #67798e;
+  }
+
   body {
     font-family: "Poppins", sans-serif;
   }
@@ -492,7 +629,7 @@ input {
   .grid-container {
     display: grid;
     row-gap: 88px;
-    margin-left: 28px;
+    margin-left: 16%;
     width: 600px;
     padding-top: 0;
   }
@@ -507,7 +644,7 @@ input {
     margin-right: 24px;
     border-radius: 30px;
     border-style: ridge;
-    height: 497px;
+    height: 561px;
     background-color: #fff;
   }
 
@@ -524,6 +661,7 @@ input {
 
   .h_section {
     font-size: 40px;
+    width: 202px;
   }
 
   .canopy {
@@ -535,6 +673,7 @@ input {
     display: inline;
     padding-right: 10px;
     color: gray;
+    font-size: 16px;
   }
 
   .work_paragraph {
@@ -565,7 +704,7 @@ input {
     margin-right: 24px;
     border-radius: 30px;
     border-style: ridge;
-    height: 470px;
+    height: 560px;
     background-color: #fff;
   }
 
@@ -591,9 +730,10 @@ input {
 
   .lang li {
     display: inline-flex;
-    padding: 4px 12px 4px 12px;
+    margin: 4px 12px 4px 12px;
     background-color: #ebebff;
     border-radius: 8px;
+    font-size: 20px;
   }
 
   .left-about {
@@ -604,7 +744,8 @@ input {
   }
 
   .contact {
-    background-image: url(./image/desktop-img/contactformbackgroundshapes.png), url(./image/desktop-img/background.png);
+    background-image: url(./image/desktop-img/contactformbackgroundshapes.png),
+      url(./image/desktop-img/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #fff;
