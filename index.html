@@ -12,7 +12,7 @@
     <title>Portfolio Project</title>
   </head>
   <body>
-  <div class="container" id="blur" >
+  <div class="container" id="blure" >
          
     <ul class="dropdown-content" id="dropdown-list">
       <a href="#home" onclick="hide();"><h3>Portfolio</h3></a>
@@ -158,6 +158,7 @@
           <form action="https://formspree.io/f/moqrpzkk" method="post">
 
             <input
+            id="name"
               type="text"
               class="name"
               placeholder="Enter your name..."
@@ -166,11 +167,12 @@
               required
             />
             <input
+              id="email"
               type="email"
               name="email"
               class="email"
               placeholder="Enter your email..."
-              required
+            
             />
             <textarea
               placeholder="Write your masseg here..."
@@ -179,7 +181,7 @@
               required
               name="text"
             ></textarea>
-
+              <h3 id="msg"></h3>
             <button class="contact_btn" type="submit">
               <span class="h_btn">Get It Touch</span>
             </button>

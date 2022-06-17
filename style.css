@@ -428,6 +428,7 @@ input {
   font-size: 31px;
   color: #67798e;
 }
+
 .pop-background {
   filter: blur(10px);
   user-select: none;
@@ -744,8 +745,7 @@ input {
   }
 
   .contact {
-    background-image: url(./image/desktop-img/contactformbackgroundshapes.png),
-      url(./image/desktop-img/background.png);
+    background-image: url(./image/desktop-img/contactformbackgroundshapes.png), url(./image/desktop-img/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -765,7 +765,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 463px;
+    margin-left: 655px;
     width: 383px;
   }
 
