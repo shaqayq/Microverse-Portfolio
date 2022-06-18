@@ -155,10 +155,10 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form action="https://formspree.io/f/moqrpzkk" method="post">
+          <form id="userform" action="https://formspree.io/f/moqrpzkk" method="post">
 
             <input
-            id="name"
+              id="name"
               type="text"
               class="name"
               placeholder="Enter your name..."
@@ -175,14 +175,15 @@
             
             />
             <textarea
-              placeholder="Write your masseg here..."
+              id="comments"
+              placeholder="Write your message here..."
               class="text_area"
               maxlength="500"
               required
               name="text"
             ></textarea>
-              <h3 id="msg"></h3>
-            <button class="contact_btn" type="submit">
+              <small id='msg'></small>
+            <button class="contact_btn" id="contact_btn" type="submit">
               <span class="h_btn">Get It Touch</span>
             </button>
           </form>
