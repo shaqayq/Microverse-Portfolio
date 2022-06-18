@@ -410,9 +410,9 @@ input {
 
 .popup {
   background-color: #fff;
-  height: 565px;
+  height: 589px;
   width: 317px;
-  top: 2%;
+  top: 1%;
   left: 8%;
   position: fixed;
   display: block;
@@ -453,11 +453,11 @@ input {
 .pop-paragraph {
   width: 300px;
   margin: 10px 0 0 12px;
-  font-size: 14px;
-  height: 100vh;
+  font-size: 9px;
 }
 
 .pop-lang {
+  width: 329px;
   list-style: none;
   padding-left: 0;
   margin: 11px 0 16px 8px;
@@ -491,10 +491,10 @@ input {
 @media screen and (min-width: 768px) {
   .popup {
     background-color: #fff;
-    height: 90%;
-    width: 83%;
+    height: 95%;
+    width: 87%;
     top: 1%;
-    left: 8%;
+    left: 6%;
     position: fixed;
     display: block;
     border-radius: 20px;
@@ -508,12 +508,12 @@ input {
 
   .pop-img {
     height: 50%;
-    width: 74%;
-    margin: 0 0 0 113px;
+    width: 65%;
+    margin: 0 0 0 188px;
   }
 
   .pop-paragraph {
-    width: 431px;
+    width: 852px;
     margin: 10px 0 0 12px;
     font-size: 18px;
   }
@@ -521,7 +521,7 @@ input {
   .pop-right {
     display: flex;
     flex-direction: row;
-    margin: 10px 0 0 112px;
+    margin: 10px 0 0 46px;
   }
 
   .pop-btn span {
