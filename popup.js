@@ -200,6 +200,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       popbtn.addEventListener('click', () => {
         document.querySelector('.popup').style.display = 'none';
         bodyBackground.classList.remove('pop-background');
+        popup.remove();
         document.body.style.overflow = 'auto';
       });
 
