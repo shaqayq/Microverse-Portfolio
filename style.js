@@ -1,11 +1,8 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-
-  if(localStorage.getItem('localdata') !== null)
-  {
-    var storagedata=JSON.parse(localStorage.getItem('localdata'));
-    document.getElementById('name').value=storagedata.name;
-    document.getElementById('email').value=storagedata.email;
-
+  if (localStorage.getItem('localdata') !== null) {
+    const storagedata = JSON.parse(localStorage.getItem('localdata'));
+    document.getElementById('name').value = storagedata.name;
+    document.getElementById('email').value = storagedata.email;
   }
 
   function listMenu() {
@@ -69,13 +66,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
     event.stopPropagation();
     const valid = checkOtherFields();
-    const namefield=document.getElementById('name');
+    const namefield = document.getElementById('name');
     const emailValid = document.getElementById('email');
-    const localname=namefield.value;
-    const localemail=emailValid.value;
-    const data ={
-      name:localname,
-      email:localemail
+    const localname = namefield.value;
+    const localemail = emailValid.value;
+    const data = {
+      name: localname,
+      email: localemail,
     };
     const check = checkLowerCase(emailValid.value);
     if (check.valid !== true) {
@@ -87,8 +84,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       document.getElementById('msg').innerText = '';
       emailValid.style.border = 'thick solid #00ff00';
       if (valid) {
-
-        localStorage.setItem('localdata',JSON.stringify(data));
+        localStorage.setItem('localdata', JSON.stringify(data));
         document.getElementById('userform').submit();
       }
     }
