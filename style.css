@@ -48,6 +48,10 @@ body {
   padding-top: 43px;
   mix-blend-mode: inherit;
 }
+#msg {
+  color: red;
+  font-weight: 700;
+}
 
 #close-btn {
   position: absolute;
