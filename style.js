@@ -1,4 +1,10 @@
 window.addEventListener('DOMContentLoaded', (event) => {
+  if (localStorage.getItem('localdata') !== null) {
+    const storagedata = JSON.parse(localStorage.getItem('localdata'));
+    document.getElementById('name').value = storagedata.name;
+    document.getElementById('email').value = storagedata.email;
+  }
+
   function listMenu() {
     document.getElementById('dropdown-list').style.display = 'block';
   }
@@ -60,7 +66,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     event.preventDefault();
     event.stopPropagation();
     const valid = checkOtherFields();
+    const namefield = document.getElementById('name');
     const emailValid = document.getElementById('email');
+    const localname = namefield.value;
+    const localemail = emailValid.value;
+    const data = {
+      name: localname,
+      email: localemail,
+    };
     const check = checkLowerCase(emailValid.value);
     if (check.valid !== true) {
       document.getElementById('msg').innerText = check.msg;
@@ -71,6 +84,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       document.getElementById('msg').innerText = '';
       emailValid.style.border = 'thick solid #00ff00';
       if (valid) {
+        localStorage.setItem('localdata', JSON.stringify(data));
         document.getElementById('userform').submit();
       }
     }
