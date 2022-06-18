@@ -141,7 +141,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     popbtn.innerHTML = '&times;';
 
     popbtn.addEventListener('click', () => {
-      document.querySelector('.popup').style.display = 'none';
       document.classList.remove('.popup');
       document.body.style.overflow = 'auto';
     });
