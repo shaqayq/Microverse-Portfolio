@@ -267,7 +267,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       livespan.innerHTML = 'GO live';
 
       const shapelive = document.createElement('i');
-      livespan.classList.add('fa', 'fa-external-link');
+      shapelive.classList.add('fa', 'fa-external-link');
       livebtn.appendChild(shapelive);
 
       const gitlink = document.createElement('a');
@@ -286,7 +286,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
       gitspan.innerHTML = 'Go resource';
 
       const shapegit = document.createElement('i');
-      gitspan.classList.add('fa', 'fa-github');
+      shapegit.classList.add('fa', 'fa-github');
       gitbtn.appendChild(shapegit);
 
       return popup;
