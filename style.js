@@ -45,3 +45,7 @@ const project = {
     sourcelink: 'https://github.com/shaqayq/Portfolio.git',
   },
 };
+
+function showprojects() {
+  document.getElementById('test').innerHTML = '<h1>hello</h1>';
+}
