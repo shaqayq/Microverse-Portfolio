@@ -13,7 +13,8 @@ body {
 .content {
   display: flex;
   justify-content: center;
-  background-image: url(./image/headershapesmobile.png), url(./image/headerbackgroundmobile.png);
+  background-image: url(./image/headershapesmobile.png),
+    url(./image/headerbackgroundmobile.png);
   background-repeat: no-repeat;
   background-size: 100%, cover;
 }
@@ -555,7 +556,11 @@ input {
   }
 
   .navbar {
-    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
   }
 
   .hum_btn {
@@ -594,7 +599,8 @@ input {
   .content {
     display: flex;
     justify-content: center;
-    background-image: url(./image/desktop-img/Header\ bg@2x.png), url(./image/desktop-img/headerbackground\ .png);
+    background-image: url(./image/desktop-img/Header\ bg@2x.png),
+      url(./image/desktop-img/headerbackground\ .png);
     background-repeat: no-repeat;
     background-size: 100%, cover;
     height: 900px;
@@ -635,7 +641,6 @@ input {
   .grid-container {
     display: grid;
     row-gap: 88px;
-    margin-left: 16%;
     width: 600px;
     padding-top: 0;
   }
@@ -750,7 +755,8 @@ input {
   }
 
   .contact {
-    background-image: url(./image/desktop-img/contactformbackgroundshapes.png), url(./image/desktop-img/background.png);
+    background-image: url(./image/desktop-img/contactformbackgroundshapes.png),
+      url(./image/desktop-img/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -770,7 +776,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 655px;
+    margin-left: 37%;
     width: 383px;
   }
 
@@ -875,6 +881,7 @@ input {
   .child-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-left: 0;
   }
 
