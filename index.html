@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
-
+    <script type="text/javascript" src="style.js"></script>
+    
     <title>Portfolio Project</title>
   </head>
   <body>
+  <div class="container" id="blure" >
+         
+    <ul class="dropdown-content" id="dropdown-list">
+      <a href="#home" onclick="hide();"><h3>Portfolio</h3></a>
+      <a href="#about" onclick="hide();"><h3>About</h3></a>
+      <a href="#contact" onclick="hide();"><h3>Contact</h3></a>
+      <button id="close-btn" onclick="closediv();">&times;</button>
+    </ul>
     <header class="top_header">
       <div class="navbar">
-        <ul class="nav-item">
-          <li class="logo">
-            <a href="#"><img src="./image/MyLogo.png" alt="Logo image" class="logo"/></a>
-            <a href="#"><img src="./image/Union.png" alt="Union image" class="hum_btn"/></a>
-          </li>  
+      
+          <a href="#"><img src="./image/MyLogo.png" alt="Logo image" class="logo"/></a>
+         <img src="./image/Union.png" alt="Union image" class="hum_btn" onclick="(listMenu());"/>
+      
+         <ul class="nav-item"> 
           <li class="desk-item"><a href="#">Portfolio</a></li>
           <li  class="desk-item"><a href="#">About</a></li>
           <li  class="desk-item"><a href="#">Contact</a></li>
@@ -24,7 +34,8 @@
         
       </div>
     </header>
-    <section class="content">
+  
+    <section class="content" id="home">
       <div class="header-wrapper">
         <h1 class="intro">I’m Shaqayq Glad to see you!</h1>
         <p class="paragraph">
@@ -58,6 +69,7 @@
         </ul>
       </div>
     </section>
+
     <section class="grid-container">
       <div class="work_section">
         <img
@@ -185,7 +197,8 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    
+    <section class="about" id="about">
       <div class="left-about">
         <h2 class="about-title">
           About Myself
@@ -226,56 +239,38 @@
       <ul class="lang-list">
         <li>
           <span class="item-list"><b>Languages</b></span>
-          <img src="./image/down.png" alt="down" class="victor" />
+           <img src="./image/down.png" alt="down" class="down-victor">
         </li>
         <li>
           <ul class="child-list">
-            <li>
-              <ul class="child-list2">
-                <li>
-                  <img src="./image/js.png" alt="js image" />
-                </li>
-                <li>
-                  <h4 class="h-lang">javascript</h4>
-                </li>
-              </ul>
+            <li class="item">
+            <img src="./image/js.png" alt="js image" class="lang_logo" />
+                <span class="lang-name"> javascript</span>
+            </li>
+            <li class="item">
+              <img src="./image/html5.png" alt="html5" class="lang_logo" />   
+              <span class="lang-name">Html</span>               
             </li>
             <li>
-              <ul class="child-list2">
-                <li>
-                  <img src="./image/html5.png" alt="htmlimage" />
-                </li>
-                <li>
-                  <h4 class="h-lang">html</h4>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <ul class="child-list2">
-                <li>
-                  <img src="./image/html3.png" alt="css image" />
-                </li>
-                <li>
-                  <h4 class="h-lang">CSS</h4>
-                </li>
-              </ul>
+              <img src="./image/css.png" alt="html5" class="lang_logo" />
+              <span class="lang-name">Css</span>
             </li>
           </ul>
         </li>
         <li>
           <span class="item-list"><b>Frameworks</b></span>
-          <img src="./image/right.png" alt="right" class="victor" />
-          <hr />
+           <img src="./image/right.png" alt="right" class="victor">
+           <hr>
         </li>
         <li>
           <span class="item-list"><b>Skils</b></span>
-          <img src="./image/right.png" alt="right" class="victor" />
-          <hr />
+           <img src="./image/right.png" alt="right" class="victor">
+           <hr>
         </li>
       </ul>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div>
         <div class="contact-body">
           <h2 class="h_contact">Contact me</h2>
@@ -284,9 +279,10 @@
             feature that you need built or a project that needs coding. I’d love
             to help with it
           </p>
-          <form action="https://formspree.io/f/moqrpzkk" method="post">
+          <form id="userform" action="https://formspree.io/f/moqrpzkk" method="post">
 
             <input
+              id="name"
               type="text"
               class="name"
               placeholder="Enter your name..."
@@ -295,21 +291,23 @@
               required
             />
             <input
+              id="email"
               type="email"
               name="email"
               class="email"
               placeholder="Enter your email..."
-              required
+            
             />
             <textarea
-              placeholder="Write your masseg here..."
+              id="comments"
+              placeholder="Write your message here..."
               class="text_area"
               maxlength="500"
               required
               name="text"
             ></textarea>
-
-            <button class="contact_btn" type="submit">
+              <small id='msg'></small>
+            <button class="contact_btn" id="contact_btn" type="submit">
               <span class="h_btn">Get It Touch</span>
             </button>
           </form>
@@ -317,6 +315,10 @@
         <img src="./image/Shape.png" class="border_img" alt="Shape image" />
       </div>
     </section>
-  
+    </div>
+    <div class="popbody">
+
+    </div>
+    <script type="text/javascript" src="popup.js"></script>
   </body>
 </html>
