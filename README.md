@@ -2,15 +2,15 @@
 
 #  Portfolio
 
-> In this project I built the header and wrok section of a mobile version of a portfolio.
+> It is my Portfoili project.
 
 
 ## Built With
 
 - Major languages: HTML and CSS
 
-## Live Demo (if available)
-[Live Demo Link](https://shaqayq.github.io/Portfolio/)
+## Live Demo 
+- See live demo [here](https://shaqayq.github.io/Portfolio/)
 
 ## Getting Started
 
@@ -25,20 +25,21 @@ Before attempting to get a copy of this, you should know(have) how to do the fol
 
 ### Setup
  In desired folder or directory in the CLI, run the command:
->                   git clone (https/ssh)URL
+>                   git clone (https://github.com/shaqayq/Portfolio)
 -Navigate into the cloned folder or repository by running the command:
->                   cd <folder/name of the repository>
+>                   cd Portfolio
 - If VsCode is your default code editor, run:
 >                   code .
 - You are all setup!
 
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Shaqayq**
 
 - GitHub: [@githubhandle](https://github.com/Shaqayq)
+- LinkedIn: [@Linkedin](https://www.linkedin.com/in/shaqayq-darwazi/)
 
 
 
