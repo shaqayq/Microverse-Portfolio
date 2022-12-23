@@ -8,6 +8,8 @@ body {
 
 .hum_btn {
   margin-left: 209px;
+  font-size: 44px;
+    color: #6070ff;
 }
 
 .content {
@@ -22,12 +24,15 @@ body {
 .navbar {
   display: inline-flex;
   margin-top: 38px;
+  align-items: center;
 }
 
 .logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 20%;
+  margin-left: 15%;
 }
 
 .nav-item {
@@ -128,6 +133,7 @@ body {
   border-style: ridge;
   height: 741px;
   background-color: #fff;
+  padding: 6%;
 }
 
 .h_section {
@@ -217,6 +223,7 @@ body {
   border-style: ridge;
   height: 621px;
   background-color: #fff;
+  padding: 6%;
 }
 
 .about {
@@ -326,7 +333,7 @@ body {
   background-image: url(./image/contactbg.png), url(./image/Contactme.png);
   background-position: right top, left top;
   background-repeat: no-repeat, no-repeat;
-  background-size: 203px, 375px;
+  background-size: 203px, 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -489,6 +496,10 @@ input {
 
 .pop-right a :hover {
   background-color: #000c7a;
+}
+
+.skilsPart img {
+  width: 24%;
 }
 }
 @media screen and (min-width: 768px) {
@@ -941,6 +952,13 @@ input {
 
   .skilsPart img{
         width: 11%;
+  }
+
+  button :hover {
+    padding: 15px;
+    color: #4381cc;
+    font-size: 25px;
+    
   }
 
 }
