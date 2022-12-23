@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+@media screen and (max-width: 768px) {
 body {
   padding: 0;
   margin: 0;
@@ -490,7 +490,7 @@ input {
 .pop-right a :hover {
   background-color: #000c7a;
 }
-
+}
 @media screen and (min-width: 768px) {
   .popup {
     background-color: #fff;
@@ -654,8 +654,9 @@ input {
   .grid-container {
     display: grid;
     row-gap: 88px;
-    width: 600px;
-    padding-top: 0;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto; 
   }
 
   .work_section {
@@ -673,7 +674,7 @@ input {
   }
 
   .screenshoot {
-    width: 500px;
+    width: 38%;
     margin: 20px 20px 10px 20px;
   }
 
@@ -758,6 +759,7 @@ input {
     background-color: #ebebff;
     border-radius: 8px;
     font-size: 20px;
+    padding: 9px;
   }
 
   .left-about {

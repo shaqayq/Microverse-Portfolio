@@ -5,19 +5,19 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const projects = {
     first: {
       id: 'first',
-      name: 'Tonic',
+      name: 'MobileZone',
       jobdescription: [
-        'Canopy',
-        ' &bullet; Backend dev  &bullet;',
-        2015,
+        'Mobile App',
+        ' &bullet; Front-End  &bullet;',
+        2022,
       ],
-      image: './image/SnapshootPortfolio.png',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+      image: './image/MobileZone.png',
+      description: 'This is a mobile web app for the mobile store that displays the list of all the products available in this store with their details.',
       technologies: [
-        'html', 'css', 'Javascript',
+        'html', 'css', 'React',
       ],
       liveLink: 'https://shaqayq.github.io/Portfolio/',
-      sourcelink: 'https://github.com/shaqayq/Portfolio.git',
+      sourcelink: 'https://github.com/shaqayq',
       classname: 'work_section',
     },
     second: {
@@ -160,10 +160,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       element.innerHTML = projects[key].technologies[t];
     }
 
+    const projectLink = document.createElement('a');
+    projectLink.classList.add('projectLink');
+    projectLink.href="#";
+    right_side.appendChild(projectLink);
+
     const btn = document.createElement('button');
     btn.classList.add('btn');
     btn.id = projects[key].id;
-    right_side.appendChild(btn);
+    projectLink.appendChild(btn);
 
     const span = document.createElement('span');
     span.classList.add('h_btn');
@@ -178,119 +183,119 @@ window.addEventListener('DOMContentLoaded', (event) => {
     pagecontent.appendChild(CreateWorkSection(key));
   });
 
-  const btns = document.querySelectorAll('.btn');
+  // const btns = document.querySelectorAll('.btn');
 
-  btns.forEach((element) => {
-    element.addEventListener('click', () => {
-      const btnID = element.id;
-      const pageBody = document.querySelector('.popbody');
-      const bodyBackground = document.querySelector('#blur');
-      bodyBackground.classList.add('pop-background');
+  // btns.forEach((element) => {
+  //   element.addEventListener('click', () => {
+  //     const btnID = element.id;
+  //     const pageBody = document.querySelector('.popbody');
+  //     const bodyBackground = document.querySelector('#blur');
+  //     bodyBackground.classList.add('pop-background');
 
-      const popup = document.createElement('div');
-      popup.classList.add('popup');
-      popup.id = 'popupwindow';
-      pageBody.appendChild(popup);
+  //     const popup = document.createElement('div');
+  //     popup.classList.add('popup');
+  //     popup.id = 'popupwindow';
+  //     pageBody.appendChild(popup);
 
-      const popbtn = document.createElement('button');
-      popbtn.classList.add('pop-close');
-      popup.appendChild(popbtn);
-      popbtn.innerHTML = '&times;';
+  //     const popbtn = document.createElement('button');
+  //     popbtn.classList.add('pop-close');
+  //     popup.appendChild(popbtn);
+  //     popbtn.innerHTML = '&times;';
 
-      popbtn.addEventListener('click', () => {
-        document.querySelector('.popup').style.display = 'none';
-        bodyBackground.classList.remove('pop-background');
-        popup.remove();
-        document.body.style.overflow = 'auto';
-      });
+  //     popbtn.addEventListener('click', () => {
+  //       document.querySelector('.popup').style.display = 'none';
+  //       bodyBackground.classList.remove('pop-background');
+  //       popup.remove();
+  //       document.body.style.overflow = 'auto';
+  //     });
 
-      const pophead = document.createElement('h1');
-      pophead.classList.add('pop-title');
-      pophead.id = 'pop-title';
-      popup.appendChild(pophead);
-      pophead.innerHTML = popdata[btnID].name;
+  //     const pophead = document.createElement('h1');
+  //     pophead.classList.add('pop-title');
+  //     pophead.id = 'pop-title';
+  //     popup.appendChild(pophead);
+  //     pophead.innerHTML = popdata[btnID].name;
 
-      const jobDescript = document.createElement('ul');
-      jobDescript.classList.add('canopy', 'canopy-list');
-      popup.appendChild(jobDescript);
+  //     const jobDescript = document.createElement('ul');
+  //     jobDescript.classList.add('canopy', 'canopy-list');
+  //     popup.appendChild(jobDescript);
 
-      for (const j in popdata[btnID].jobdescription) {
-        const element = document.createElement('li');
-        jobDescript.appendChild(element);
-        element.innerHTML = popdata[btnID].jobdescription[j];
-      }
+  //     for (const j in popdata[btnID].jobdescription) {
+  //       const element = document.createElement('li');
+  //       jobDescript.appendChild(element);
+  //       element.innerHTML = popdata[btnID].jobdescription[j];
+  //     }
 
-      const image = document.createElement('img');
-      image.classList.add('pop-img');
-      image.id = 'pop-img';
-      popup.appendChild(image);
-      image.src = popdata[btnID].image;
+  //     const image = document.createElement('img');
+  //     image.classList.add('pop-img');
+  //     image.id = 'pop-img';
+  //     popup.appendChild(image);
+  //     image.src = popdata[btnID].image;
 
-      const right = document.createElement('div');
-      right.classList.add('pop-right');
-      popup.appendChild(right);
+  //     const right = document.createElement('div');
+  //     right.classList.add('pop-right');
+  //     popup.appendChild(right);
 
-      const paragraph = document.createElement('p');
-      paragraph.classList.add('pop-paragraph');
-      paragraph.id = 'pop-paragraph';
-      right.appendChild(paragraph);
-      paragraph.innerHTML = popdata[btnID].description;
+  //     const paragraph = document.createElement('p');
+  //     paragraph.classList.add('pop-paragraph');
+  //     paragraph.id = 'pop-paragraph';
+  //     right.appendChild(paragraph);
+  //     paragraph.innerHTML = popdata[btnID].description;
 
-      const left = document.createElement('div');
-      left.classList.add('pop-left');
-      right.appendChild(left);
+  //     const left = document.createElement('div');
+  //     left.classList.add('pop-left');
+  //     right.appendChild(left);
 
-      const tech = document.createElement('ul');
-      tech.classList.add('lang', 'pop-lang');
-      tech.id = 'pop-lang';
-      left.appendChild(tech);
+  //     const tech = document.createElement('ul');
+  //     tech.classList.add('lang', 'pop-lang');
+  //     tech.id = 'pop-lang';
+  //     left.appendChild(tech);
 
-      // eslint-disable-next-line no-restricted-syntax
-      for (const t in popdata[btnID].technologies) {
-        const element = document.createElement('li');
-        tech.appendChild(element);
-        element.innerHTML = popdata[btnID].technologies[t];
-      }
+  //     // eslint-disable-next-line no-restricted-syntax
+  //     for (const t in popdata[btnID].technologies) {
+  //       const element = document.createElement('li');
+  //       tech.appendChild(element);
+  //       element.innerHTML = popdata[btnID].technologies[t];
+  //     }
 
-      const livelink = document.createElement('a');
-      livelink.id = 'livelink';
-      left.appendChild(livelink);
-      livelink.href = popdata[btnID].liveLink;
+  //     const livelink = document.createElement('a');
+  //     livelink.id = 'livelink';
+  //     left.appendChild(livelink);
+  //     livelink.href = popdata[btnID].liveLink;
 
-      const livebtn = document.createElement('button');
-      livebtn.classList.add('pop-btn');
-      livebtn.id = 'details';
-      livelink.appendChild(livebtn);
+  //     const livebtn = document.createElement('button');
+  //     livebtn.classList.add('pop-btn');
+  //     livebtn.id = 'details';
+  //     livelink.appendChild(livebtn);
 
-      const livespan = document.createElement('span');
-      livespan.classList.add('h_btn');
-      livebtn.appendChild(livespan);
-      livespan.innerHTML = 'GO live';
+  //     const livespan = document.createElement('span');
+  //     livespan.classList.add('h_btn');
+  //     livebtn.appendChild(livespan);
+  //     livespan.innerHTML = 'GO live';
 
-      const shapelive = document.createElement('i');
-      shapelive.classList.add('fa', 'fa-external-link');
-      livebtn.appendChild(shapelive);
+  //     const shapelive = document.createElement('i');
+  //     shapelive.classList.add('fa', 'fa-external-link');
+  //     livebtn.appendChild(shapelive);
 
-      const gitlink = document.createElement('a');
-      gitlink.id = 'sourcelink"';
-      left.appendChild(gitlink);
-      gitlink.href = popdata[btnID].sourcelink;
+  //     const gitlink = document.createElement('a');
+  //     gitlink.id = 'sourcelink"';
+  //     left.appendChild(gitlink);
+  //     gitlink.href = popdata[btnID].sourcelink;
 
-      const gitbtn = document.createElement('button');
-      gitbtn.classList.add('pop-btn');
-      gitbtn.id = 'details';
-      gitlink.appendChild(gitbtn);
+  //     const gitbtn = document.createElement('button');
+  //     gitbtn.classList.add('pop-btn');
+  //     gitbtn.id = 'details';
+  //     gitlink.appendChild(gitbtn);
 
-      const gitspan = document.createElement('span');
-      gitspan.classList.add('h_btn');
-      gitbtn.appendChild(gitspan);
-      gitspan.innerHTML = 'Go resource';
+  //     const gitspan = document.createElement('span');
+  //     gitspan.classList.add('h_btn');
+  //     gitbtn.appendChild(gitspan);
+  //     gitspan.innerHTML = 'Go resource';
 
-      const shapegit = document.createElement('i');
-      shapegit.classList.add('fa', 'fa-github');
-      gitbtn.appendChild(shapegit);
+  //     const shapegit = document.createElement('i');
+  //     shapegit.classList.add('fa', 'fa-github');
+  //     gitbtn.appendChild(shapegit);
 
-      return popup;
-    });
-  });
+  //     return popup;
+  //   });
+  // });
 });
