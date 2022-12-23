@@ -654,7 +654,7 @@ input {
   .grid-container {
     display: grid;
     row-gap: 88px;
-    width: fit-content;
+    width: 66%;
     margin-left: auto;
     margin-right: auto; 
   }
@@ -671,10 +671,11 @@ input {
     border-style: ridge;
     height: 561px;
     background-color: #fff;
+    justify-self: center;
   }
 
   .screenshoot {
-    width: 38%;
+    width: 31%;
     margin: 20px 20px 10px 20px;
   }
 
@@ -731,6 +732,7 @@ input {
     border-style: ridge;
     height: 560px;
     background-color: #fff;
+    justify-self: center;
   }
 
   .left-side {
@@ -924,5 +926,10 @@ input {
 
   .victor {
     float: right;
+  }
+
+  #second {
+    height: 72%;
+    width: 43%;
   }
 }
