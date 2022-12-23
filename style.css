@@ -932,4 +932,9 @@ input {
     height: 72%;
     width: 43%;
   }
+
+  .skilsPart img{
+        width: 11%;
+  }
+
 }
