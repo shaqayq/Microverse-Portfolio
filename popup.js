@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         ' &bullet; Front-End  &bullet;',
         2022,
       ],
-      image: './image/MobileZone.png',
+      image: './image/mobileZone.png',
       description: 'This is a mobile web app for the mobile store that displays the list of all the products available in this store with their details.',
       technologies: [
         'html', 'css', 'React', 'API', 'JavaScript',
