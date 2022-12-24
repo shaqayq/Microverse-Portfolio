@@ -14,12 +14,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
       image: './image/MobileZone.png',
       description: 'This is a mobile web app for the mobile store that displays the list of all the products available in this store with their details.',
       technologies: [
-        'html', 'css', 'React', 'API' , 'JavaScript'
+        'html', 'css', 'React', 'API', 'JavaScript',
       ],
       liveLink: 'https://shaqayq.github.io/Portfolio/',
       sourcelink: 'https://github.com/shaqayq',
       classname: 'work_section',
-      projectDemo: 'https://63111354be357e514f115d4b--shiny-sprite-86c43c.netlify.app/'
+      projectDemo: 'https://63111354be357e514f115d4b--shiny-sprite-86c43c.netlify.app/',
     },
     second: {
       id: 'second',
@@ -32,15 +32,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
       image: './image/anime.png',
       description: 'This is a web application showing list of animes. Users are able to like on different individual anime which updates on real time.Users are able to add comments and reserve dates to watch a selected anime.',
       technologies: [
-        'html', 'css', 'Javascript', 'API'
+        'html', 'css', 'Javascript', 'API',
       ],
       liveLink: 'https://shaqayq.github.io/Portfolio/',
       sourcelink: 'https://github.com/shaqayq/Portfolio.git',
       classname: 'work_section2',
-      projectDemo: 'https://xsidx.github.io/js-capstone-group/'
+      projectDemo: 'https://xsidx.github.io/js-capstone-group/',
     },
 
-   
   };
 
   const popdata = {
@@ -109,7 +108,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     const image = document.createElement('img');
     image.classList.add('screenshoot');
-    image.id=projects[key].id;
+    image.id = projects[key].id;
     workSection.appendChild(image);
     image.src = projects[key].image;
 
@@ -149,8 +148,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     const projectLink = document.createElement('a');
     projectLink.classList.add('projectLink');
-    projectLink.href=projects[key].projectDemo;
-    projectLink.target="_blank";
+    projectLink.href = projects[key].projectDemo;
+    projectLink.target = '_blank';
     right_side.appendChild(projectLink);
 
     const btn = document.createElement('button');
@@ -170,6 +169,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
   Object.keys(projects).forEach((key) => {
     pagecontent.appendChild(CreateWorkSection(key));
   });
-
-  
 });
